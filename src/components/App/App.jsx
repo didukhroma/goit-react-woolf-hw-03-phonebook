@@ -6,8 +6,9 @@ import Filter from 'components/Filter';
 import ContactsList from 'components/ContactsList';
 import Container from 'components/Container';
 import { StyledMainTitle, StyledTitle } from './App.styled';
+import WEB_API from 'helpers/localStorage';
 
-const initialState = {
+const INITIAL_STATE = {
   contacts: [
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
     { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
@@ -17,10 +18,23 @@ const initialState = {
   filter: '',
 };
 
+const LOCAL_STORAGE_KEY = 'contacts';
+
 export default class App extends Component {
   state = {
-    ...initialState,
+    ...INITIAL_STATE,
   };
+
+  componentDidMount() {
+    const data = WEB_API.getData(LOCAL_STORAGE_KEY);
+    data && this.setState({ contacts: data });
+  }
+
+  componentDidUpdate(prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      WEB_API.setData(LOCAL_STORAGE_KEY, this.state.contacts);
+    }
+  }
 
   addContact = contact => {
     const isExist = this.state.contacts.find(
