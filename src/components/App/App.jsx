@@ -27,11 +27,12 @@ export default class App extends Component {
 
   componentDidMount() {
     const data = WEB_API.getData(LOCAL_STORAGE_KEY);
+    console.log(data);
     data && this.setState({ contacts: data });
   }
 
-  componentDidUpdate(prevState) {
-    if (this.state.contacts !== prevState.contacts) {
+  componentDidUpdate(_, prevState) {
+    if (this.state.contacts.length !== prevState.contacts.length) {
       WEB_API.setData(LOCAL_STORAGE_KEY, this.state.contacts);
     }
   }
