@@ -29,7 +29,6 @@ export default class App extends Component {
 
   componentDidMount() {
     const data = WEB_API.getData(LOCAL_STORAGE_KEY);
-    console.log(data);
     data && this.setState({ contacts: data });
   }
 
