@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/didukhroma.github.io/goit-react-woolf-hw-03-phonebook/static/css/main.3c0c9886.css",
-    "main.js": "/didukhroma.github.io/goit-react-woolf-hw-03-phonebook/static/js/main.cd7a6bda.js",
-    "index.html": "/didukhroma.github.io/goit-react-woolf-hw-03-phonebook/index.html",
-    "main.3c0c9886.css.map": "/didukhroma.github.io/goit-react-woolf-hw-03-phonebook/static/css/main.3c0c9886.css.map",
-    "main.cd7a6bda.js.map": "/didukhroma.github.io/goit-react-woolf-hw-03-phonebook/static/js/main.cd7a6bda.js.map"
+    "main.css": "/goit-react-woolf-hw-03-phonebook/static/css/main.3c0c9886.css",
+    "main.js": "/goit-react-woolf-hw-03-phonebook/static/js/main.29b4deab.js",
+    "index.html": "/goit-react-woolf-hw-03-phonebook/index.html",
+    "main.3c0c9886.css.map": "/goit-react-woolf-hw-03-phonebook/static/css/main.3c0c9886.css.map",
+    "main.29b4deab.js.map": "/goit-react-woolf-hw-03-phonebook/static/js/main.29b4deab.js.map"
   },
   "entrypoints": [
     "static/css/main.3c0c9886.css",
-    "static/js/main.cd7a6bda.js"
+    "static/js/main.29b4deab.js"
   ]
 }
