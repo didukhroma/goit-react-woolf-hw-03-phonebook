@@ -5,8 +5,10 @@ import ContactForm from 'components/ContactForm';
 import Filter from 'components/Filter';
 import ContactsList from 'components/ContactsList';
 import Container from 'components/Container';
-import { StyledMainTitle, StyledTitle } from './App.styled';
+
 import WEB_API from 'helpers/localStorage';
+
+import { StyledMainTitle, StyledTitle } from './App.styled';
 
 const INITIAL_STATE = {
   contacts: [
